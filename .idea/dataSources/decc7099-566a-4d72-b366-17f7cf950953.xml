@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="test">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="goods"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="shopping"/>
+    <schema id="7" name="sys"/>
+    <schema id="8" name="s_t"/>
+    <schema id="9" name="testywq"/>
+    <schema id="10" name="ywq"/>
+    <table id="11" parent="1" name="productkd"/>
+    <table id="12" parent="1" name="studenginfo"/>
+    <table id="13" parent="1" name="user"/>
+    <table id="14" parent="1" name="user1"/>
+    <table id="15" parent="1" name="usertable"/>
+    <column id="16" parent="11" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="17" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <key id="18" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="19" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="20" parent="12" name="nicheng">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="21" parent="12" name="truename">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="22" parent="12" name="sex">
+      <data-type>bit(10)|0</data-type>
+    </column>
+    <column id="23" parent="12" name="birtthday">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="24" parent="12" name="zhuanye">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="25" parent="12" name="hobby">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="26" parent="12" name="beizhu">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="27" parent="12" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="28" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="29" parent="13" name="username">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="30" parent="13" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="31" parent="13" name="type">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="32" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="33" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="34" parent="14" name="用户名">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="35" parent="14" name="密码">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="36" parent="14" name="用户类型">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="37" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="38" parent="15" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="39" parent="15" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="40" parent="15" name="PRIMARY">
+      <columns>username</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
